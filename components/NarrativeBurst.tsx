@@ -10,15 +10,15 @@ interface NarrativeBurstProps {
 
 export default function NarrativeBurst({ narrative, buyCta, buyEnabled, pumpLink }: NarrativeBurstProps) {
   return (
-    <section className="py-24 px-6 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-cyan/5 via-transparent to-magenta/5" />
-      <div className="container mx-auto max-w-4xl text-center relative">
-        <h2 className="text-4xl md:text-5xl font-display font-black mb-8 text-gradient">
+    <section className="py-32 px-6 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-magenta/10 via-transparent to-cyan/10" />
+      <div className="container mx-auto max-w-5xl relative">
+        <h2 className="text-5xl md:text-7xl font-display font-black mb-16 text-center bg-gradient-to-r from-magenta via-cyan to-magenta bg-clip-text text-transparent">
           {narrative.title}
         </h2>
-        <div className="max-w-3xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed mb-12">
+        <div className="space-y-12 text-xl md:text-2xl leading-loose">
           {narrative.paragraphs.map((paragraph, i) => (
-            <p key={i} className="text-fg/90">{paragraph}</p>
+            <p key={i} className="text-fg/90 text-center max-w-4xl mx-auto font-light">{paragraph}</p>
           ))}
         </div>
         

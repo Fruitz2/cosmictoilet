@@ -28,63 +28,20 @@ export default function HomePage() {
     <>
       <BoostBar />
       <LiquidGradient />
-      <AmbientWordmark />
       <Header strings={strings} links={links} />
-      <UrgencyRibbon 
-        showUrgencyRibbon={strings.showUrgencyRibbon} 
-        urgencyMessages={strings.urgencyMessages} 
-      />
       
       <main id="main-content" className="relative">
         {/* Hero Section */}
-        <section id="home" className="relative min-h-screen flex items-center justify-center px-6 py-12 md:py-20">
-          <AmbientWordmark />
-          <TextOrbit />
-          
-          <div className="relative z-10 text-center max-w-4xl mx-auto space-y-6 md:space-y-8">
-            <SwirlPortal>
-              <Image
-                src="/logo.png"
-                alt="Cosmic Toilet"
-                width={180}
-                height={180}
-                className="mx-auto animate-float"
-                priority
-              />
-            </SwirlPortal>
-            
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-magenta via-cyan to-magenta bg-clip-text text-transparent animate-shimmer">
-              The Cosmic Bowl Never Clogs
-            </h1>
-            
-            <p className="text-lg md:text-xl text-fg/80 max-w-2xl mx-auto leading-relaxed">
-              Where bears get flushed and bulls orbit to Valhalla. <br className="hidden md:block" />
-              The first intergalactic restroom for true degens.
-            </p>
-            
-            <div className="flex flex-wrap gap-4 justify-center pt-4">
-              {strings.buyEnabled && links.pump && (
-                <TextConfetti>
-                  <a
-                    href={links.pump}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-primary"
-                  >
-                    {strings.hero.buyCta}
-                  </a>
-                </TextConfetti>
-              )}
-              
-              <a
-                href={links.tg}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-secondary"
-              >
-                {strings.hero.secondaryCtas[0]}
-              </a>
-            </div>
+        <section id="home" className="relative min-h-screen flex items-center justify-center px-6">
+          <div className="relative z-10">
+            <Image
+              src="/logo.png"
+              alt="Cosmic Toilet"
+              width={320}
+              height={320}
+              className="mx-auto"
+              priority
+            />
           </div>
         </section>
 

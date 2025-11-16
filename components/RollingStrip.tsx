@@ -14,18 +14,16 @@ export default function RollingStrip({ messages }: RollingStripProps) {
     setReducedMotion(prefersReducedMotion());
   }, []);
 
-  const doubled = [...messages, ...messages];
-
   return (
-    <div className="relative overflow-hidden py-8 bg-subtle/50 backdrop-blur-sm">
-      <div className={`flex gap-12 whitespace-nowrap ${reducedMotion ? "" : "animate-marquee"}`}>
-        {doubled.map((msg, i) => (
-          <span
+    <div className="relative overflow-hidden py-8 bg-gradient-to-r from-magenta/5 via-transparent to-cyan/5">
+      <div className="flex animate-marquee">
+        {[...messages, ...messages].map((message, i) => (
+          <div
             key={i}
-            className="text-lg font-mono text-cyan/70 uppercase tracking-widest"
+            className="flex-shrink-0 px-12 text-xl md:text-2xl font-light text-fg/50 uppercase tracking-widest"
           >
-            {msg}
-          </span>
+            {message}
+          </div>
         ))}
       </div>
     </div>

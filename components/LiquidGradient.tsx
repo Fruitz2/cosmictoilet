@@ -11,24 +11,16 @@ export default function LiquidGradient() {
   }, []);
 
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden">
-      <div 
-        className={`absolute inset-0 bg-gradient-to-br from-magenta/[0.03] via-transparent to-cyan/[0.02] ${
+    <div className="fixed inset-0" style={{ zIndex: -1 }}>
+      <div
+        className={`absolute inset-0 ${
           reducedMotion ? "" : "animate-liquid"
         }`}
         style={{
-          filter: "blur(100px)",
-          transform: "scale(1.5)",
-        }}
-      />
-      <div 
-        className={`absolute inset-0 bg-gradient-to-tr from-cyan/[0.02] via-transparent to-magenta/[0.03] ${
-          reducedMotion ? "" : "animate-liquid"
-        }`}
-        style={{
-          filter: "blur(120px)",
-          transform: "scale(1.5)",
-          animationDelay: "-10s",
+          background: `radial-gradient(ellipse at ${mouseX}% ${mouseY}%, var(--magenta) 0%, transparent 40%),
+                       radial-gradient(ellipse at ${100 - mouseX}% ${100 - mouseY}%, var(--cyan) 0%, transparent 40%),
+                       linear-gradient(180deg, var(--bg) 0%, transparent 100%)`,
+          opacity: 0.08,
         }}
       />
     </div>

@@ -24,19 +24,11 @@ export default function Header({ strings, links }: HeaderProps) {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-40 bg-bg/80 backdrop-blur-xl border-b border-ring/20">
-      <nav className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
-            <Image 
-              src="/logo.png" 
-              alt="Cosmic Toilet" 
-              width={40} 
-              height={40}
-              className="group-hover:scale-110 transition-transform duration-300"
-            />
-            <span className="font-display font-bold text-xl hidden sm:inline text-gradient">
+    <header className="fixed top-0 left-0 right-0 z-50 px-6 py-6">
+      <div className="container mx-auto max-w-6xl">
+        <nav className="flex items-center justify-between">
+          <Link href="/" className="text-3xl font-display font-bold bg-gradient-to-r from-magenta to-cyan bg-clip-text text-transparent">
+            🚽
               COSMIC TOILET
             </span>
           </Link>
