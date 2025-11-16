@@ -3,10 +3,14 @@ interface CommunityBoardProps {
     title: string;
     body: string;
   };
-  tgLink: string;
+  socials: Array<{
+    icon: string;
+    label: string;
+    href: string;
+  }>;
 }
 
-export default function CommunityBoard({ community, tgLink }: CommunityBoardProps) {
+export default function CommunityBoard({ community, socials }: CommunityBoardProps) {
   return (
     <section className="py-24 px-6">
       <div className="container mx-auto max-w-3xl text-center">
@@ -17,14 +21,20 @@ export default function CommunityBoard({ community, tgLink }: CommunityBoardProp
           <p className="text-xl text-fg/80 mb-10">
             {community.body}
           </p>
-          <a
-            href={tgLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-secondary inline-flex items-center gap-2"
-          >
-            Join Telegram →
-          </a>
+          <div className="flex flex-wrap gap-4 justify-center">
+            {socials.map((social, i) => (
+              <a
+                key={i}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary inline-flex items-center gap-2"
+              >
+                <span className="text-2xl">{social.icon}</span>
+                {social.label}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>
