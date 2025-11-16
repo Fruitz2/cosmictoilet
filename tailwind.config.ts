@@ -25,14 +25,14 @@ const config: Config = {
         mono: ["var(--font-mono)", "monospace"],
       },
       animation: {
-        "pulse-slow": "pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-        "orbit": "orbit 12s linear infinite",
-        "float": "float 6s ease-in-out infinite",
-        "shimmer": "shimmer 2s ease-out infinite",
-        "glow": "glow 4s ease-in-out infinite",
-        "liquid": "liquid 20s ease-in-out infinite",
-        "swirl": "swirl 14s linear infinite",
-        "marquee": "marquee 30s linear infinite",
+        "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "orbit": "orbit 8s linear infinite",
+        "float": "float 3s ease-in-out infinite",
+        "shimmer": "shimmer 1.5s ease-out infinite",
+        "glow": "glow 2s ease-in-out infinite",
+        "liquid": "liquid 12s ease-in-out infinite",
+        "swirl": "swirl 10s linear infinite",
+        "marquee": "marquee 20s linear infinite",
       },
       keyframes: {
         marquee: {

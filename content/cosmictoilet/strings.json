@@ -8,20 +8,30 @@
     "Orbit window open."
   ],
 
-  "metaTitle": "Cosmic Toilet — flush the bear. orbit the bull.",
-  "metaDescription": "Magenta–cyan porcelain portal. Logo-only visuals, kinetic type, ridiculous but clean. Flush the bear. Orbit the bull.",
-  "menu": { "home":"Home","lore":"Lore","token":"Token","roadmap":"Roadmap","press":"Press Kit","buy":"Buy","x":"X","tg":"TG" },
+  "meta": {
+    "title": "Cosmic Toilet | The Ultimate Porcelain Portal",
+    "description": "We're literally a toilet in space. Bulls go down. Bears get flushed. The cosmic bowl never clogs. Ever.",
+    "ogImageAlt": "Cosmic Toilet - The most powerful toilet in the universe"
+  },
+
+  "menu": { 
+    "home":"Home","lore":"Lore","token":"Token","roadmap":"Roadmap","press":"Press Kit","buy":"Buy","x":"X","tg":"TG" 
+  },
 
   "hero": {
     "eyebrow": "THE GALACTIC PORCELAIN",
     "h1Variants": [
-      ["flush the bear","orbit the bull"],
-      ["wipe the red","spin the green"],
-      ["diamond flush","only"]
+      "flush the bear.",
+      "orbit the bull.",
+      "diamond hands, porcelain throne.",
+      "the cosmic bowl never clogs."
     ],
-    "sub": "Magenta–cyan portal. Letters > pictures. Swirl responsibly.",
-    "buyCta": "Buy on Pump.fun",
-    "secondaryCtas": ["Join Flush Club","Follow the Swirl"]
+    "sub": "The first intergalactic restroom for degens. Where bears get swirled and bulls get flushed to Valhalla.",
+    "buyCta": " GRAB TOKENS",
+    "secondaryCtas": [
+      "Join the Bowl",
+      "Follow the Flush"
+    ]
   },
 
   "reasons": {
@@ -34,16 +44,20 @@
   },
 
   "strip": [
-    "Flush the fear.",
-    "Diamond flush only.",
-    "Wipe the red. Spin the green.",
-    "Porcelain > paper hands.",
-    "Orbit mode engaged."
+    "NO ROADMAP • PURE CHAOS • 100% FLUSH ENERGY",
+    "BEARS GET SWIRLED • BULLS GET BLESSED",
+    "DIAMOND HANDS • PORCELAIN THRONE",
+    "THE BOWL NEVER CLOGS"
   ],
 
   "narrativeBurst": {
-    "title":"The First Flush",
-    "body": "The Universe clogged with paper hands. A porcelain portal opened — magenta on one side, cyan on the other. Every flush deletes a frown and spawns a rocket."
+    "title": "The Legend of the Cosmic Bowl",
+    "paragraphs": [
+      "In the darkest depths of the crypto void, where rugs are pulled and bears reign supreme, there exists a legendary throne.",
+      "This isn't your grandma's toilet. This is a COSMIC PORTAL forged from magenta stardust and cyan nebulas. It doesn't just flush—it OBLITERATES reality.",
+      "Bears enter. Legends exit. The bowl never clogs. The seat never breaks. Diamond hands sit upon the porcelain throne, watching paper hands swirl into oblivion.",
+      "We're not here to pump your bags. We're here to flush the entire system and watch it orbit into a new dimension."
+    ]
   },
 
   "bullishMenu": {
@@ -65,10 +79,10 @@
   "roadmapPreview": {
     "title": "ORBITMAP",
     "bullets": [
-      "Week 1: First Flush — teaser shorts",
-      "Week 2: The Great Unclog — meme raids",
-      "Week 3: TP Badges — type-only collectibles",
-      "Ongoing: Flush of the Day — top meme gets front-page swirl"
+      "Week 1: First crypto project with actual plumbing",
+      "Week 2: Gravitational pull stronger than any black hole",
+      "Week 3: Held by diamond asses, flushed by paper hands",
+      "Ongoing: We're literally a toilet. What more do you want?"
     ]
   },
 
