@@ -18,8 +18,11 @@ const StringsSchema = z.object({
   plausibleDomain: z.string().optional(),
   showUrgencyRibbon: z.boolean(),
   urgencyMessages: z.array(z.string()),
-  metaTitle: z.string(),
-  metaDescription: z.string(),
+  meta: z.object({
+    title: z.string(),
+    description: z.string(),
+    ogImageAlt: z.string(),
+  }),
   menu: z.object({
     home: z.string(),
     lore: z.string(),
@@ -32,22 +35,19 @@ const StringsSchema = z.object({
   }),
   hero: z.object({
     eyebrow: z.string(),
-    h1Variants: z.array(z.array(z.string())),
+    h1Variants: z.array(z.string()),
     sub: z.string(),
     buyCta: z.string(),
     secondaryCtas: z.array(z.string()),
   }),
-  reasons: z.object({
-    title: z.string(),
-    items: z.array(z.object({
-      h: z.string(),
-      p: z.string(),
-    })),
-  }),
+  reasons: z.array(z.object({
+    icon: z.string(),
+    text: z.string(),
+  })),
   strip: z.array(z.string()),
   narrativeBurst: z.object({
     title: z.string(),
-    body: z.string(),
+    paragraphs: z.array(z.string()),
   }),
   bullishMenu: z.object({
     title: z.string(),
@@ -58,6 +58,11 @@ const StringsSchema = z.object({
     title: z.string(),
     body: z.string(),
   }),
+  socials: z.array(z.object({
+    icon: z.string(),
+    label: z.string(),
+    href: z.string(),
+  })),
   roadmapPreview: z.object({
     title: z.string(),
     bullets: z.array(z.string()),
