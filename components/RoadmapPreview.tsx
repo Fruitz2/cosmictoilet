@@ -23,25 +23,6 @@ export default function RoadmapPreview({ roadmapPreview }: RoadmapPreviewProps) 
             </div>
           ))}
         </div>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Link
-            href="/roadmap"
-            className="btn-secondary inline-flex items-center gap-2"
-          >
-            View Full Orbitmap →
-          </Link>
-          
-          {buyEnabled && pumpLink && buyCta && (
-            <a
-              href={pumpLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary inline-flex items-center gap-2"
-            >
-              {buyCta}
-            </a>
-          )}
-        </div>
       </div>
     </section>
   );
