@@ -17,8 +17,6 @@ import MobileBuyDock from "@/components/MobileBuyDock";
 import BoostBar from "@/components/BoostBar";
 import TextConfetti from "@/components/TextConfetti";
 import FlushWipe from "@/components/FlushWipe";
-import StickySideBuy from "@/components/StickySideBuy";
-import TextUnderline from "@/components/TextUnderline";
 import { getStrings, getLinks } from "@/lib/content-loader";
 import Image from "next/image";
 
@@ -40,7 +38,7 @@ export default function HomePage() {
       <main id="main-content" className="relative">
         {/* Hero Section */}
         <section id="home" className="relative min-h-screen flex items-center justify-center px-6 py-12 md:py-20">
-          <AmbientWordmark text="FLUSH" />
+          <AmbientWordmark />
           <TextOrbit />
           
           <div className="relative z-10 text-center max-w-4xl mx-auto space-y-6 md:space-y-8">
@@ -137,12 +135,6 @@ export default function HomePage() {
       <Footer strings={strings} />
       
       <MobileBuyDock
-        buyEnabled={strings.buyEnabled}
-        pumpLink={links.pump}
-        buyCta={strings.hero.buyCta}
-      />
-      
-      <StickySideBuy
         buyEnabled={strings.buyEnabled}
         pumpLink={links.pump}
         buyCta={strings.hero.buyCta}
