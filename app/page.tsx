@@ -15,6 +15,10 @@ import RoadmapPreview from "@/components/RoadmapPreview";
 import UrgencyRibbon from "@/components/UrgencyRibbon";
 import MobileBuyDock from "@/components/MobileBuyDock";
 import BoostBar from "@/components/BoostBar";
+import TextConfetti from "@/components/TextConfetti";
+import FlushWipe from "@/components/FlushWipe";
+import StickySideBuy from "@/components/StickySideBuy";
+import TextUnderline from "@/components/TextUnderline";
 import { getStrings, getLinks } from "@/lib/content-loader";
 import Image from "next/image";
 
@@ -61,14 +65,16 @@ export default function HomePage() {
             
             <div className="flex flex-wrap gap-4 justify-center pt-8">
               {strings.buyEnabled && links.pump && (
-                <a
-                  href={links.pump}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary"
-                >
-                  {strings.hero.buyCta}
-                </a>
+                <TextConfetti>
+                  <a
+                    href={links.pump}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary"
+                  >
+                    {strings.hero.buyCta}
+                  </a>
+                </TextConfetti>
               )}
               
               <a
@@ -95,6 +101,8 @@ export default function HomePage() {
         <RollingStrip messages={strings.strip} />
         
         <ReasonRow reasons={strings.reasons} />
+        
+        <FlushWipe />
         
         <RollingStrip messages={strings.strip} />
         
@@ -128,6 +136,12 @@ export default function HomePage() {
       <Footer strings={strings} />
       
       <MobileBuyDock
+        buyEnabled={strings.buyEnabled}
+        pumpLink={links.pump}
+        buyCta={strings.hero.buyCta}
+      />
+      
+      <StickySideBuy
         buyEnabled={strings.buyEnabled}
         pumpLink={links.pump}
         buyCta={strings.hero.buyCta}
