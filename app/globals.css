@@ -15,10 +15,6 @@
     --star: #FFF0B3;
   }
 
-  * {
-    @apply border-border;
-  }
-
   body {
     @apply bg-bg text-fg;
   }
