@@ -1,0 +1,84 @@
+{
+  "buyEnabled": true,
+  "plausibleDomain": "cosmictoilet.xyz",
+  "showUrgencyRibbon": true,
+  "urgencyMessages": [
+    "New porcelain portal online.",
+    "Flush the fear.",
+    "Orbit window open."
+  ],
+
+  "metaTitle": "Cosmic Toilet — flush the bear. orbit the bull.",
+  "metaDescription": "Magenta–cyan porcelain portal. Logo-only visuals, kinetic type, ridiculous but clean. Flush the bear. Orbit the bull.",
+  "menu": { "home":"Home","lore":"Lore","token":"Token","roadmap":"Roadmap","press":"Press Kit","buy":"Buy","x":"X","tg":"TG" },
+
+  "hero": {
+    "eyebrow": "THE GALACTIC PORCELAIN",
+    "h1Variants": [
+      ["flush the bear","orbit the bull"],
+      ["wipe the red","spin the green"],
+      ["diamond flush","only"]
+    ],
+    "sub": "Magenta–cyan portal. Letters > pictures. Swirl responsibly.",
+    "buyCta": "Buy on Pump.fun",
+    "secondaryCtas": ["Join Flush Club","Follow the Swirl"]
+  },
+
+  "reasons": {
+    "title": "Three reasons before the flush",
+    "items": [
+      { "h":"Porcelain Clarity", "p":"No stock art. No cope. Just letters and duotone glow." },
+      { "h":"Frictionless Launch", "p":"Fair on Pump.fun, 0% tax. Press buy or don't. The portal spins either way." },
+      { "h":"Cosmic Culture", "p":"Memes unclog timelines. We spin velocity." }
+    ]
+  },
+
+  "strip": [
+    "Flush the fear.",
+    "Diamond flush only.",
+    "Wipe the red. Spin the green.",
+    "Porcelain > paper hands.",
+    "Orbit mode engaged."
+  ],
+
+  "narrativeBurst": {
+    "title":"The First Flush",
+    "body": "The Universe clogged with paper hands. A porcelain portal opened — magenta on one side, cyan on the other. Every flush deletes a frown and spawns a rocket."
+  },
+
+  "bullishMenu": {
+    "title": "THE SWIRL PANEL",
+    "items": [
+      "Fair Launch • Pump.fun engine",
+      "0% Tax — free flushes",
+      "≤3% Treasury — if used, say it plainly",
+      "LP & fees per Pump.fun docs (currently 0.015 SOL on graduation)"
+    ],
+    "disclaimer": "No promises. Swirl responsibly. Markets can overflow."
+  },
+
+  "community": {
+    "title": "Constellation Community",
+    "body": "Tag #DiamondFlush. We'll swirl your best text memes into the starfield."
+  },
+
+  "roadmapPreview": {
+    "title": "ORBITMAP",
+    "bullets": [
+      "Week 1: First Flush — teaser shorts",
+      "Week 2: The Great Unclog — meme raids",
+      "Week 3: TP Badges — type-only collectibles",
+      "Ongoing: Flush of the Day — top meme gets front-page swirl"
+    ]
+  },
+
+  "footer": {
+    "legal": "Entertainment only. Not investment advice. Some regions may be restricted.",
+    "region": "Access to third-party platforms may vary by country."
+  },
+
+  "toggleTips": {
+    "reduceMotionOn": "Motion trimmed. Swirl paused.",
+    "reduceMotionOff": "Motion restored. Portal humming."
+  }
+}

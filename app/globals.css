@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #0D0F14;
+    --fg: #EEF3F8;
+    --magenta: #FF3FD1;
+    --cyan: #3FE6FF;
+    --accent: #3FE6FF;
+    --accent2: #FF3FD1;
+    --subtle: #121620;
+    --ring: #7DEBFF;
+    --star: #FFF0B3;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-bg text-fg;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--cyan) 30%, transparent);
+  }
+
+  ::-moz-selection {
+    background: color-mix(in srgb, var(--cyan) 30%, transparent);
+  }
+
+  /* Focus styles */
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-ring;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-subtle;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-cyan/30 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-cyan/50;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-gradient-to-r from-magenta via-cyan to-magenta bg-clip-text text-transparent;
+    background-size: 200% auto;
+    animation: shimmer 3s ease-out infinite;
+  }
+
+  .glow-cyan {
+    box-shadow: 0 0 48px color-mix(in srgb, var(--cyan) 35%, transparent);
+  }
+
+  .glow-magenta {
+    box-shadow: 0 0 48px color-mix(in srgb, var(--accent2) 35%, transparent);
+  }
+
+  .neon-border {
+    border: 1.5px solid color-mix(in srgb, var(--ring) 60%, transparent);
+  }
+
+  .btn-primary {
+    @apply px-8 py-4 bg-gradient-to-r from-magenta to-cyan text-bg font-bold rounded-xl;
+    @apply hover:scale-105 transition-all duration-300;
+    @apply shadow-lg hover:shadow-cyan/50;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-4 border-2 border-cyan text-cyan font-bold rounded-xl;
+    @apply hover:bg-cyan/10 transition-all duration-300;
+  }
+
+  /* Liquid gradient background */
+  .liquid-gradient {
+    background: linear-gradient(135deg, 
+      color-mix(in srgb, var(--magenta) 3%, transparent) 0%,
+      color-mix(in srgb, var(--cyan) 2%, transparent) 100%);
+    animation: liquid 20s ease-in-out infinite;
+  }
+
+  /* Skip to content link */
+  .skip-link {
+    @apply absolute -top-10 left-4 z-50 bg-accent px-4 py-2 text-bg font-bold rounded-lg;
+    @apply focus:top-4 transition-all duration-300;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Disable animations for reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
