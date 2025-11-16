@@ -94,26 +94,24 @@ export default function Header({ strings, links }: HeaderProps) {
               </svg>
             </button>
           </div>
-        </div>
+        </nav>
 
         {/* Mobile Nav */}
         {mobileMenuOpen && (
           <div className="lg:hidden mt-4 pb-4 border-t border-ring/20 pt-4">
             {navItems.map((item) => (
-              <Link
+              <a
                 key={item.href}
                 href={item.href}
-                className={`block py-2 font-medium transition-colors hover:text-cyan ${
-                  pathname === item.href ? "text-cyan" : "text-fg/70"
-                }`}
+                className="block py-2 font-medium transition-colors hover:text-cyan text-fg/70"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.label}
-              </Link>
+              </a>
             ))}
           </div>
         )}
-      </nav>
+      </div>
     </header>
   );
 }
