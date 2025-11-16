@@ -34,14 +34,32 @@
     ]
   },
 
-  "reasons": {
-    "title": "Three reasons before the flush",
-    "items": [
-      { "h":"Porcelain Clarity", "p":"No stock art. No cope. Just letters and duotone glow." },
-      { "h":"Frictionless Launch", "p":"Fair on Pump.fun, 0% tax. Press buy or don't. The portal spins either way." },
-      { "h":"Cosmic Culture", "p":"Memes unclog timelines. We spin velocity." }
-    ]
-  },
+  "reasons": [
+    {
+      "icon": "🚽",
+      "text": "First crypto project with actual plumbing"
+    },
+    {
+      "icon": "🌀",
+      "text": "Gravitational pull stronger than any black hole"
+    },
+    {
+      "icon": "💎",
+      "text": "Held by diamond asses, flushed by paper hands"
+    },
+    {
+      "icon": "🎯",
+      "text": "We're literally a toilet. What more do you want?"
+    },
+    {
+      "icon": "🌙",
+      "text": "Moon? Boring. We're aiming for Uranus."
+    },
+    {
+      "icon": "⚡",
+      "text": "Faster than a cosmic flush at light speed"
+    }
+  ],
 
   "strip": [
     "NO ROADMAP • PURE CHAOS • 100% FLUSH ENERGY",

@@ -39,31 +39,32 @@ export default function HomePage() {
       
       <main id="main-content" className="relative">
         {/* Hero Section */}
-        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-20 relative">
-          <SwirlPortal />
+        <section id="home" className="relative min-h-screen flex items-center justify-center px-6 py-12 md:py-20">
+          <AmbientWordmark text="FLUSH" />
           <TextOrbit />
           
-          <div className="container mx-auto max-w-5xl text-center space-y-8 relative z-10">
-            <p className="font-mono text-sm uppercase tracking-[0.3em] text-cyan/70">
-              {strings.hero.eyebrow}
+          <div className="relative z-10 text-center max-w-4xl mx-auto space-y-6 md:space-y-8">
+            <SwirlPortal>
+              <Image
+                src="/logo.png"
+                alt="Cosmic Toilet"
+                width={180}
+                height={180}
+                className="mx-auto animate-float"
+                priority
+              />
+            </SwirlPortal>
+            
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-magenta via-cyan to-magenta bg-clip-text text-transparent animate-shimmer">
+              The Cosmic Bowl Never Clogs
+            </h1>
+            
+            <p className="text-lg md:text-xl text-fg/80 max-w-2xl mx-auto leading-relaxed">
+              Where bears get flushed and bulls orbit to Valhalla. <br className="hidden md:block" />
+              The first intergalactic restroom for true degens.
             </p>
             
-            <Image
-              src="/logo.png"
-              alt="Cosmic Toilet"
-              width={200}
-              height={200}
-              className="mx-auto animate-float"
-              priority
-            />
-            
-            <KineticType variants={strings.hero.h1Variants} />
-            
-            <p className="text-xl md:text-2xl text-fg/70 max-w-2xl mx-auto">
-              {strings.hero.sub}
-            </p>
-            
-            <div className="flex flex-wrap gap-4 justify-center pt-8">
+            <div className="flex flex-wrap gap-4 justify-center pt-4">
               {strings.buyEnabled && links.pump && (
                 <TextConfetti>
                   <a
@@ -85,52 +86,52 @@ export default function HomePage() {
               >
                 {strings.hero.secondaryCtas[0]}
               </a>
-              
-              <a
-                href={links.x}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-secondary"
-              >
-                {strings.hero.secondaryCtas[1]}
-              </a>
             </div>
           </div>
         </section>
 
         <RollingStrip messages={strings.strip} />
         
-        <ReasonRow reasons={strings.reasons} />
+        <section id="why" className="py-12 md:py-20">
+          <ReasonRow reasons={strings.reasons} />
+        </section>
         
         <FlushWipe />
         
+        <section id="lore" className="py-12 md:py-20">
+          <NarrativeBurst 
+            narrative={strings.narrativeBurst}
+            buyCta={strings.hero.buyCta}
+            buyEnabled={strings.buyEnabled}
+            pumpLink={links.pump}
+          />
+        </section>
+        
         <RollingStrip messages={strings.strip} />
         
-        <NarrativeBurst 
-          narrative={strings.narrativeBurst}
-          buyCta={strings.hero.buyCta}
-          buyEnabled={strings.buyEnabled}
-          pumpLink={links.pump}
-        />
+        <section id="token" className="py-12 md:py-20">
+          <BullishMenu 
+            bullishMenu={strings.bullishMenu}
+            buyCta={strings.hero.buyCta}
+            buyEnabled={strings.buyEnabled}
+            pumpLink={links.pump}
+          />
+        </section>
         
-        <BullishMenu 
-          bullishMenu={strings.bullishMenu}
-          buyCta={strings.hero.buyCta}
-          buyEnabled={strings.buyEnabled}
-          pumpLink={links.pump}
-        />
+        <FlushWipe />
         
-        <CommunityBoard 
-          community={strings.community}
-          tgLink={links.tg}
-        />
+        <section id="roadmap" className="py-12 md:py-20">
+          <RoadmapPreview roadmapPreview={strings.roadmapPreview} />
+        </section>
         
-        <RoadmapPreview 
-          roadmapPreview={strings.roadmapPreview}
-          buyCta={strings.hero.buyCta}
-          buyEnabled={strings.buyEnabled}
-          pumpLink={links.pump}
-        />
+        <RollingStrip messages={strings.strip} />
+        
+        <section id="community" className="py-12 md:py-20">
+          <CommunityBoard 
+            community={strings.community}
+            socials={strings.socials}
+          />
+        </section>
       </main>
       
       <Footer strings={strings} />
