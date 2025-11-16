@@ -1,4 +1,4 @@
-# Cosmic Toilet 🚀
+# Cosmic Toilet 🚀🚽
 
 **flush the bear. orbit the bull.**
 
