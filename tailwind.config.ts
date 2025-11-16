@@ -32,8 +32,13 @@ const config: Config = {
         "glow": "glow 4s ease-in-out infinite",
         "liquid": "liquid 20s ease-in-out infinite",
         "swirl": "swirl 14s linear infinite",
+        "marquee": "marquee 30s linear infinite",
       },
       keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
         orbit: {
           "0%": { transform: "rotate(0deg)" },
           "100%": { transform: "rotate(360deg)" },
