@@ -38,12 +38,12 @@ export default function HomePage() {
             <Image
               src="/logo.png"
               alt="Cosmic Toilet"
-              width={400}
-              height={400}
+              width={700}
+              height={700}
               className="mx-auto drop-shadow-2xl"
               priority
             />
-            <div className="mt-8 flex justify-center gap-6">
+            <div className="mt-12 flex flex-wrap justify-center gap-6">
               {strings.buyEnabled && links.pump && (
                 <a
                   href={links.pump}
@@ -51,9 +51,17 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   className="btn-primary"
                 >
-                  {strings.hero.buyCta}
+                  BUY NOW
                 </a>
               )}
+              <a
+                href="https://dexscreener.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary"
+              >
+                VISIT DEXSCREENER
+              </a>
             </div>
           </div>
         </section>
@@ -93,13 +101,6 @@ export default function HomePage() {
         </section>
         
         <RollingStrip messages={strings.strip} />
-        
-        <section id="community">
-          <CommunityBoard 
-            community={strings.community}
-            socials={strings.socials}
-          />
-        </section>
       </main>
       
       <Footer strings={strings} />

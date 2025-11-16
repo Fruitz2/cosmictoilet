@@ -22,15 +22,17 @@ export default function NarrativeBurst({ narrative, buyCta, buyEnabled, pumpLink
           ))}
         </div>
         
-        {buyEnabled && pumpLink && buyCta && (
-          <a
-            href={pumpLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary inline-flex items-center gap-2"
-          >
-            {buyCta}
-          </a>
+        {buyEnabled && pumpLink && (
+          <div className="mt-16 text-center">
+            <a
+              href={pumpLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary inline-flex items-center gap-2"
+            >
+              TAKE THE DUMP
+            </a>
+          </div>
         )}
       </div>
     </section>
