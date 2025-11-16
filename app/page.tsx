@@ -47,13 +47,13 @@ export default function HomePage() {
 
         <RollingStrip messages={strings.strip} />
         
-        <section id="why" className="py-12 md:py-20">
+        <section id="why">
           <ReasonRow reasons={strings.reasons} />
         </section>
         
         <FlushWipe />
         
-        <section id="lore" className="py-12 md:py-20">
+        <section id="lore">
           <NarrativeBurst 
             narrative={strings.narrativeBurst}
             buyCta={strings.hero.buyCta}
@@ -64,7 +64,7 @@ export default function HomePage() {
         
         <RollingStrip messages={strings.strip} />
         
-        <section id="token" className="py-12 md:py-20">
+        <section id="token">
           <BullishMenu 
             bullishMenu={strings.bullishMenu}
             buyCta={strings.hero.buyCta}
@@ -75,13 +75,13 @@ export default function HomePage() {
         
         <FlushWipe />
         
-        <section id="roadmap" className="py-12 md:py-20">
+        <section id="roadmap">
           <RoadmapPreview roadmapPreview={strings.roadmapPreview} />
         </section>
         
         <RollingStrip messages={strings.strip} />
         
-        <section id="community" className="py-12 md:py-20">
+        <section id="community">
           <CommunityBoard 
             community={strings.community}
             socials={strings.socials}

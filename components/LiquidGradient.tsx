@@ -17,8 +17,8 @@ export default function LiquidGradient() {
           reducedMotion ? "" : "animate-liquid"
         }`}
         style={{
-          background: `radial-gradient(ellipse at ${mouseX}% ${mouseY}%, var(--magenta) 0%, transparent 40%),
-                       radial-gradient(ellipse at ${100 - mouseX}% ${100 - mouseY}%, var(--cyan) 0%, transparent 40%),
+          background: `radial-gradient(ellipse at 30% 20%, var(--magenta) 0%, transparent 40%),
+                       radial-gradient(ellipse at 70% 80%, var(--cyan) 0%, transparent 40%),
                        linear-gradient(180deg, var(--bg) 0%, transparent 100%)`,
           opacity: 0.08,
         }}

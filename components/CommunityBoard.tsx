@@ -12,13 +12,13 @@ interface CommunityBoardProps {
 
 export default function CommunityBoard({ community, socials }: CommunityBoardProps) {
   return (
-    <section className="py-24 px-6">
-      <div className="container mx-auto max-w-3xl text-center">
-        <div className="relative p-16 rounded-3xl bg-gradient-to-br from-magenta/10 to-cyan/10 backdrop-blur-sm border border-ring/20">
-          <h2 className="text-4xl md:text-5xl font-display font-black mb-8 text-gradient">
+    <section className="py-32 px-6">
+      <div className="container mx-auto max-w-4xl text-center">
+        <div className="relative p-20 rounded-3xl bg-gradient-to-br from-magenta/5 to-cyan/5">
+          <h2 className="text-5xl md:text-6xl font-display font-black mb-12 bg-gradient-to-r from-magenta via-cyan to-magenta bg-clip-text text-transparent">
             {community.title}
           </h2>
-          <p className="text-xl text-fg/80 mb-10">
+          <p className="text-2xl text-fg/70 mb-12 font-light">
             {community.body}
           </p>
           <div className="flex flex-wrap gap-4 justify-center">

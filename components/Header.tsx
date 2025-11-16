@@ -29,8 +29,6 @@ export default function Header({ strings, links }: HeaderProps) {
         <nav className="flex items-center justify-between">
           <Link href="/" className="text-3xl font-display font-bold bg-gradient-to-r from-magenta to-cyan bg-clip-text text-transparent">
             🚽
-              COSMIC TOILET
-            </span>
           </Link>
 
           {/* Desktop Nav */}
