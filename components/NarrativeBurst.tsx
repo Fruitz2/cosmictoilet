@@ -1,10 +1,10 @@
 interface NarrativeBurstProps {
   narrative: {
     title: string;
-    body: string;
+    paragraphs: string[];
   };
-  buyCta?: string;
-  buyEnabled?: boolean;
+  buyCta: string;
+  buyEnabled: boolean;
   pumpLink?: string;
 }
 
@@ -16,9 +16,11 @@ export default function NarrativeBurst({ narrative, buyCta, buyEnabled, pumpLink
         <h2 className="text-4xl md:text-5xl font-display font-black mb-8 text-gradient">
           {narrative.title}
         </h2>
-        <p className="text-xl leading-relaxed text-fg/80 mb-12">
-          {narrative.body}
-        </p>
+        <div className="max-w-3xl mx-auto space-y-6 text-lg md:text-xl leading-relaxed mb-12">
+          {narrative.paragraphs.map((paragraph, i) => (
+            <p key={i} className="text-fg/90">{paragraph}</p>
+          ))}
+        </div>
         
         {buyEnabled && pumpLink && buyCta && (
           <a
