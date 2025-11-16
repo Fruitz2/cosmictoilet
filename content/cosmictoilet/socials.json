@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "💬",
+    "label": "Telegram",
+    "href": "https://t.me/cosmictoilet"
+  },
+  {
+    "icon": "🐦",
+    "label": "X/Twitter", 
+    "href": "https://x.com/cosmictoilet"
+  },
+  {
+    "icon": "🚀",
+    "label": "Pump.fun",
+    "href": "#"
+  }
+]

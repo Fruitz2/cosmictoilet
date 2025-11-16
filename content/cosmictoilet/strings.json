@@ -93,6 +93,24 @@
     "title": "Constellation Community",
     "body": "Tag #DiamondFlush. We'll swirl your best text memes into the starfield."
   },
+  
+  "socials": [
+    {
+      "icon": "💬",
+      "label": "Join the Bowl",
+      "href": "https://t.me/cosmictoilet"
+    },
+    {
+      "icon": "🐦",
+      "label": "Follow the Flush",
+      "href": "https://x.com/cosmictoilet"
+    },
+    {
+      "icon": "🚀",
+      "label": "Get Tokens",
+      "href": "#"
+    }
+  ],
 
   "roadmapPreview": {
     "title": "ORBITMAP",
