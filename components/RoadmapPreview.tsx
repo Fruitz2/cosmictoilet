@@ -5,31 +5,24 @@ interface RoadmapPreviewProps {
     title: string;
     bullets: string[];
   };
-  buyCta?: string;
-  buyEnabled?: boolean;
-  pumpLink?: string;
 }
 
-export default function RoadmapPreview({ roadmapPreview, buyCta, buyEnabled, pumpLink }: RoadmapPreviewProps) {
+export default function RoadmapPreview({ roadmapPreview }: RoadmapPreviewProps) {
   return (
-    <section className="py-24 px-6 bg-subtle/30">
-      <div className="container mx-auto max-w-4xl">
-        <h2 className="text-4xl md:text-5xl font-display font-black text-center mb-12 text-gradient">
+    <section className="py-32 px-6">
+      <div className="container mx-auto max-w-5xl">
+        <h2 className="text-5xl md:text-7xl font-display font-black mb-20 text-center bg-gradient-to-r from-magenta via-cyan to-magenta bg-clip-text text-transparent">
           {roadmapPreview.title}
         </h2>
-        
-        <div className="space-y-6 mb-12">
-          {roadmapPreview.bullets.map((item, i) => (
+        <div className="grid gap-6">
+          {roadmapPreview.bullets.map((bullet, i) => (
             <div
               key={i}
-              className="flex items-center gap-4 p-6 rounded-xl bg-bg/50 backdrop-blur-sm border border-ring/20 hover:border-cyan/50 transition-all duration-300"
-            >
-              <span className="text-2xl">→</span>
-              <p className="text-lg font-medium">{item}</p>
+              className="p-8 rounded-2xl bg-gradient-to-r from-cyan/5 to-magenta/5 border border-fg/10 hover:border-magenta/30 transition-all duration-300">
+              <p className="text-xl md:text-2xl text-fg/70 font-light">{bullet}</p>
             </div>
           ))}
         </div>
-        
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link
             href="/roadmap"

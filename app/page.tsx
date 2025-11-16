@@ -33,15 +33,28 @@ export default function HomePage() {
       <main id="main-content" className="relative">
         {/* Hero Section */}
         <section id="home" className="relative min-h-screen flex items-center justify-center px-6">
+          <div className="absolute inset-0 bg-gradient-radial from-magenta/5 via-transparent to-transparent" />
           <div className="relative z-10">
             <Image
               src="/logo.png"
               alt="Cosmic Toilet"
-              width={320}
-              height={320}
-              className="mx-auto"
+              width={400}
+              height={400}
+              className="mx-auto drop-shadow-2xl"
               priority
             />
+            <div className="mt-8 flex justify-center gap-6">
+              {strings.buyEnabled && links.pump && (
+                <a
+                  href={links.pump}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary"
+                >
+                  {strings.hero.buyCta}
+                </a>
+              )}
+            </div>
           </div>
         </section>
 

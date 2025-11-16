@@ -16,11 +16,11 @@ export default function Header({ strings, links }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { href: "/", label: strings.menu.home },
-    { href: "/lore", label: strings.menu.lore },
-    { href: "/token", label: strings.menu.token },
-    { href: "/roadmap", label: strings.menu.roadmap },
-    { href: "/press", label: strings.menu.press },
+    { href: "#home", label: strings.menu.home },
+    { href: "#lore", label: strings.menu.lore },
+    { href: "#token", label: strings.menu.token },
+    { href: "#roadmap", label: strings.menu.roadmap },
+    { href: "#community", label: "Community" },
   ];
 
   return (
@@ -34,16 +34,13 @@ export default function Header({ strings, links }: HeaderProps) {
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
-              <Link
+              <a
                 key={item.href}
                 href={item.href}
-                className={`font-medium transition-colors hover:text-cyan ${
-                  pathname === item.href ? "text-cyan" : "text-fg/70"
-                }`}
-                aria-current={pathname === item.href ? "page" : undefined}
+                className="font-medium transition-colors hover:text-cyan text-fg/70"
               >
                 {item.label}
-              </Link>
+              </a>
             ))}
           </div>
 

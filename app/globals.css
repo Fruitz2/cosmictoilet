@@ -27,6 +27,8 @@
 
   body {
     @apply bg-bg text-fg;
+    min-height: 100vh;
+    overflow-x: hidden;
   }
 
   ::selection {
@@ -81,7 +83,7 @@
   }
 
   .btn-primary {
-    @apply px-12 py-5 bg-gradient-to-r from-magenta to-cyan text-bg font-bold text-lg rounded-full hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-cyan/50;
+    @apply px-12 py-5 bg-gradient-to-r from-magenta to-cyan text-bg font-bold text-lg rounded-full hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-cyan/50 uppercase tracking-wider;
   }
   
   .btn-secondary {
