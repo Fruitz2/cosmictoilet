@@ -21,7 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cosmic Toilet — flush the bear. orbit the bull.",
+  title: "Cosmic Toilet | Flush the Bear, Orbit the Bull",
   description: "Magenta–cyan porcelain portal. Logo-only visuals, kinetic type, ridiculous but clean. Flush the bear. Orbit the bull.",
   keywords: "cosmic toilet, memecoin, solana, flush the bear, orbit the bull, diamond flush",
   authors: [{ name: "Cosmic Toilet Team" }],
@@ -52,6 +52,14 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
 };
 
