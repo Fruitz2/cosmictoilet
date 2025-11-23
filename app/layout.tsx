@@ -36,10 +36,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/api/og",
+        url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Cosmic Toilet",
+        alt: "Cosmic Toilet - flush the bear. orbit the bull.",
       },
     ],
   },
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cosmic Toilet",
     description: "flush the bear. orbit the bull.",
-    images: ["/api/og"],
+    images: ["/logo.png"],
   },
   robots: {
     index: true,
